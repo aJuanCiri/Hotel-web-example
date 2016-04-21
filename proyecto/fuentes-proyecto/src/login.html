@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<title>Inicio de sesión</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<p class="cabecera"><a href="index.jsp"><img 
+			src="images/logo.png"></a></p>
+		</div><br/>
+		<div id="formularioLogin"><hr/>
+			<div id="conectividad">
+				<a href="www.facebook.com"><img class="facebook" src="images/facebook.png"></a><br/>
+				<a href="www.plus.google.com"><img class="google" src="images/google.png"></a>
+			</div><br/>
+			<div id="textoLogin">
+				<form action="http://localhost:8090/HotelLink/LoginUser" method="post">
+				<input class="correo" id="IdCorreo" type="email" name="correo" placeholder="Dirección de e-mail"/><br/>
+				<input class="password" id="IdClave" type="password" name="password" placeholder="Contraseña"/><br/>
+				<input type="submit"/>
+				</form>
+			</div>
+			<label><p class="recordarme"><input type="checkbox" name="opcion" value="recordar"> Recordarme</p></label>
+			<p class="registrarme">¿No estás registrado? <a href="registro.html">Registrarme</a></p>
+		</div>
+	</div>
+</body>
+</html>

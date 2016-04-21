@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<title>Buscador de Hoteles</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<p class="cabecera"><a href="index.jsp"><img 
+			src="images/logo.png"></a></p>
+		</div>
+		<div id="formularioRegistro">
+			<div id="textoRegistro">
+				<hr/><h1>Formulario de registro de usuarios:</h1>
+				<form action="http://localhost:8090/HotelLink/InsertUser" method="post">
+				<table><td width="350">
+				<label for="IdNombre">Nombre*:</label><br/><input id="IdNombre" type="text" name="name"/><br/>
+				<label for="IdApellidos">Apellidos*:</label><br/><input id="IdApellidos" type="text" name="surName"/><br/>
+
+				<fieldset style="border: 0px; padding: 0em;">
+						<legend style="padding:0px;border-radius:0px;margin-left:0px;">Sexo:</legend>
+					<input id="IdHombre" type="radio" name="sex" value="H"/><label for="IdHombre">Hombre</label>
+					<input id="IdMujer" type="radio" name="sex" value="M"/><label for="IdMujer">Mujer</label><br/>
+				</fieldset>
+
+				<label for="IdCorreo">Correo electrónico*:</label><br/><input id="IdCorreo" type="email" name="correo"/><br/>
+				<label for="IdReCorreo">Repetir correo electrónico*:</label><br/><input id="IdReCorreo" type="email" name="reCorreo"/><br/>
+				</td><td>
+				<label for="IdClave">Contraseña*:</label><br/><input id="IdClave" type="password" name="password"/><br/>
+				<label for="IdReClave">Repetir contraseña*:</label><br/><input id="IdReClave" type="password" name="rePassword"/><br/>				
+				<label for="IdDireccion">Dirección*:</label><br/><input id="IdDireccion" type="text" name="direccion"/><br/>
+				<label for="IdLocalidad">Localidad*:</label><br/>
+				<select name="localidad">  
+		      			<option value="zaragoza">Zaragoza</option> 
+		      			<option value="madrid">Madrid</option> 
+		      			<option value="barcelona">Barcelona</option>
+				</select><br/>
+				<label for="IdCpostal">Código postal:</label><br/><input id="IdCpostal" type="text" name="cPostal"/>
+				</td></table>
+				<p class="nota">Nota: Los campos marcados con un asterisco deben rellenarse de forma obligatoria.</p>
+				<div class="botonesFormulario">
+					<input type="submit" value="Registrarse">
+					<a href="registro.html"><input type="reset"/></a><br/>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

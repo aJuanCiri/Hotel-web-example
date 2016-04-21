@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>HotelLink</display-name>
+  <description>
+  		App de un servicio comparador de hoteles
+	</description>
+
+  <servlet>
+    <servlet-name>InsertUser</servlet-name>
+    <servlet-class>userServlet.InsertUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertUser</servlet-name>
+    <url-pattern>/InsertUser</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginUser</servlet-name>
+    <servlet-class>userServlet.LoginUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginUser</servlet-name>
+    <url-pattern>/LoginUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Consultar</servlet-name>
+    <servlet-class>userServlet.Consultar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Consultar</servlet-name>
+    <url-pattern>/Consultar</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ActualizarUsuario</servlet-name>
+    <servlet-class>userServlet.ActualizarUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ActualizarUsuario</servlet-name>
+    <url-pattern>/ActualizarUsuario</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>CompletarPerfil</servlet-name>
+    <servlet-class>userServlet.CompletarPerfil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CompletarPerfil</servlet-name>
+    <url-pattern>/CompletarPerfil</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>LogoutUser</servlet-name>
+    <servlet-class>userServlet.LogoutUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutUser</servlet-name>
+    <url-pattern>/LogoutUser</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Actividades</servlet-name>
+    <servlet-class>userServlet.Actividades</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Actividades</servlet-name>
+    <url-pattern>/Actividades</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Reservar</servlet-name>
+    <servlet-class>userServlet.Reservar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Reservar</servlet-name>
+    <url-pattern>/Reservar</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>LogOut</servlet-name>
+    <servlet-class>userServlet.LogOut</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogOut</servlet-name>
+    <url-pattern>/LogOut</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>Comparar</servlet-name>
+    <servlet-class>userServlet.Comparar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Comparar</servlet-name>
+    <url-pattern>/Comparar</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>ActividadesOrdenadas</servlet-name>
+    <servlet-class>userServlet.ActividadesOrdenadas</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ActividadesOrdenadas</servlet-name>
+    <url-pattern>/ActividadesOrdenadas</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EliminarUsuario</servlet-name>
+    <servlet-class>userServlet.EliminarUsuario</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EliminarUsuario</servlet-name>
+    <url-pattern>/EliminarUsuario</url-pattern>
+  </servlet-mapping>
+</web-app>
