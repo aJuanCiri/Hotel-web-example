@@ -20,7 +20,7 @@ public class Reservar extends HttpServlet{
 	private OracleTemplate ot;
 
 	/**
-	 * Método doPost encargado de gestionar las peticiones de tipo POST
+	 * MÃ©todo doPost encargado de gestionar las peticiones de tipo POST
 	 */
 	public void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws IOException {
@@ -33,11 +33,11 @@ public class Reservar extends HttpServlet{
 			try {
 				// Conexion con la BD
 				ot = new OracleTemplate("hendrix-oracle.cps.unizar.es",
-						"1521","vicious","a682531","13145gkJ");
+						"1521","vicious","*****","*****");
 				ot.connect();
 
 				OperacionesBaseDeDatos ecd = new OperacionesBaseDeDatos(ot);
-				// Operacion encargada de añadir en la base de datos una nueva reserva
+				// Operacion encargada de aÃ±adir en la base de datos una nueva reserva
 				ecd.reservar(usuario, Integer.parseInt(id), Integer.parseInt(mes), Integer.parseInt(ano));
 				// Reedireccionamos la salida al JSP correspondiente
 				RequestDispatcher respuesta = request.getRequestDispatcher("confirmar.jsp");
@@ -63,7 +63,7 @@ public class Reservar extends HttpServlet{
 	}
 	
 	/**
-	 * Método doGet encargado de gestionar las peticiones de tipo GET
+	 * MÃ©todo doGet encargado de gestionar las peticiones de tipo GET
 	 */
 	protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
