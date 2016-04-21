@@ -41,7 +41,7 @@ public class Actividades extends HttpServlet {
 		try {
 			// Conectamos con la base de datos para realizar la consulta
 			ot = new OracleTemplate("hendrix-oracle.cps.unizar.es",
-					"1521","vicious","a682531","13145gkJ");
+					"1521","vicious","*****","*****");
 			ot.connect();
 
 			OperacionesBaseDeDatos ecd = new OperacionesBaseDeDatos(ot);
