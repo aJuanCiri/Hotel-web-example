@@ -11,7 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpSession;
 
 /**
-* Recibe los par‡metros introducidos por el usuario
+* Recibe los parâ€¡metros introducidos por el usuario
 * en el formulario y comprueba si estos son correctos.
 * Si lo son, crea un usuario con dichos parametros y lo 
 * ncluye en la DB, en caso contrario redirecciona al
@@ -22,7 +22,7 @@ public class InsertUser extends HttpServlet{
 	private OracleTemplate ot;
 
 	/**
-	 * Método doPost encargado de gestionar las peticiones de tipo POST
+	 * MÃ©todo doPost encargado de gestionar las peticiones de tipo POST
 	 */
 	public void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws IOException {
@@ -39,7 +39,7 @@ public class InsertUser extends HttpServlet{
 		String localidad = request.getParameter("localidad");
 		String postal = request.getParameter("cPostal");
 
-		//Comprobamos si coinciden los valores de corre y contraseña
+		//Comprobamos si coinciden los valores de corre y contraseÃ±a
 		if (!correo.equals(reCorreo) || 
 				!password.equals(rePassword)) {
 			// Si no coinciden los datos introducidos no son validos
@@ -51,7 +51,7 @@ public class InsertUser extends HttpServlet{
 				try {
 					// Conexion a la base de datos
 					ot = new OracleTemplate("hendrix-oracle.cps.unizar.es",
-							"1521","vicious","a682531","13145gkJ");
+							"1521","vicious","*****","******");
 					ot.connect();
 
 					OperacionesBaseDeDatos ecd = new OperacionesBaseDeDatos(ot);
