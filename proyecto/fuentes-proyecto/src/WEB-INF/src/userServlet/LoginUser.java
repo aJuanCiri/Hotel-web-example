@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  * Servlet encargado de comprobar si existe en la base 
- * de datos un usuario con el email y contraseña
+ * de datos un usuario con el email y contraseÃ±a
  * insertados por el usuario en el formulario. Si existe
  * logea a este en la pagina web, en caso contrario muestra
  * mensaje de error
@@ -28,7 +28,7 @@ public class LoginUser extends HttpServlet {
 	}
 	
 	/**
-	 * Método doPost encargado de gestionar las peticiones de tipo POST
+	 * MÃ©todo doPost encargado de gestionar las peticiones de tipo POST
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
@@ -39,7 +39,7 @@ public class LoginUser extends HttpServlet {
 		try {
 			// Conexion a la BD
 			ot = new OracleTemplate("hendrix-oracle.cps.unizar.es",
-					"1521","vicious","a682531","13145gkJ");
+					"1521","vicious","*****","*****");
 			ot.connect();
 			OperacionesBaseDeDatos ecd = new OperacionesBaseDeDatos(ot);
 			// Comprobamos si existe un usuario en la BD con ese nombre/password
@@ -51,7 +51,7 @@ public class LoginUser extends HttpServlet {
        			response.sendRedirect("index.jsp?msg="+ correo + ", has sido logeado correctamente");
 			} else {
 				// Si no existe reedirecionamos al login
-				response.sendRedirect("login.html?msg=Error en el inicio de sesión. Revise los parametros introducidos");
+				response.sendRedirect("login.html?msg=Error en el inicio de sesiÃ³n. Revise los parametros introducidos");
 			}
 		} catch (InstantiationException e) {
 			System.out.println("Error: " + e.getMessage());
