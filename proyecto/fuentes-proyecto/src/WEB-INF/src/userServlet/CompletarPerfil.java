@@ -37,7 +37,7 @@ public class CompletarPerfil extends HttpServlet{
 				try {
 					System.out.printf("Conectando... \n");
 					ot = new OracleTemplate("hendrix-oracle.cps.unizar.es",
-							"1521","vicious","a682531","13145gkJ");
+							"1521","vicious","*****","*****");
 					ot.connect();
 					System.out.println("Conectado a " + ot);
 
