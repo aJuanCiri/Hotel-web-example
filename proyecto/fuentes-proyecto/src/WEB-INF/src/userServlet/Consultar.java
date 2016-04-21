@@ -49,7 +49,7 @@ public class Consultar extends HttpServlet {
 		try {
 			// Conexion a la base de datos
 			ot = new OracleTemplate("hendrix-oracle.cps.unizar.es",
-					"1521","vicious","a682531","13145gkJ");
+					"1521","vicious","*****","*****");
 			ot.connect();
 
 			OperacionesBaseDeDatos ecd = new OperacionesBaseDeDatos(ot);
